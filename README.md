@@ -4,21 +4,21 @@
 
 ## **Features** 
 
-- [User Authentication:](#User Authentication)
+- [User Authentication:]_(#User Authentication)
       - Passwords are hashed and securely stored using bcrypt.
       - Implemented **JWT-based authentication** for secure access to protected routes.
       - Middleware ensures only authenticated users can perform operations on their own tasks.
 
-- [Role-Based Authorization:](#Role-Based Authorization)
+- [Role-Based Authorization:]_(#Role-Based Authorization)
       - Admin-specific APIs for managing users (fetch, update roles, delete).
       - Regular users can only manage their own tasks.
 
-- [Cloudinary Integration:](#Cloudinary Integration)
+- [Cloudinary Integration:]_(#Cloudinary Integration)
       - Used **Cloudinary** for handling user profile pictures and signature uploads.
       - Supports seamless profile picture updates by first destroying the old image before uploading a new one.
       - Default profile picture setup when an image is removed.
 
-- [To-Do Functionality:](#To-Do Functionality)
+- [To-Do Functionality:]_(#To-Do Functionality)
       - Created a To-Do model with the following fields: task, description, status, lastDate, and createdBy (referencing the user).
       - Utilized **Moment.js** for efficient date and time management.
       - APIs for:
@@ -28,15 +28,15 @@
          - Updating a To-Do (task details, status, last date).
          - Deleting a To-Do. 
 
-- [ Advanced Middleware:](# Advanced Middleware)
+- [ Advanced Middleware:]_(# Advanced Middleware)
     - **Authentication Middleware:** Validates JWTs, ensures user identity, and attaches user data to requests.
     - **Authorization Middleware:** Restricts access to admin-specific APIs.
     - **Error Handling Middleware:** Centralized error handling using **express-async-handler** for cleaner code.    
 
-- [ File Upload Handling:](# File Upload Handling)
+- [ File Upload Handling:]_(# File Upload Handling)
     - Custom Multer configuration to store temporary files with unique timestamps before uploading them to Cloudinary.
     - Automatically deletes local files post-upload to optimize storage.
-- [User Profile Management:](#User Profile Management)
+- [User Profile Management:]-(#User Profile Management)
     - Update user details, including profile pictures and passwords.
     - Reset and update passwords securely.
     - Delete user profiles with all associated data.
